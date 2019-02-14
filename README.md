@@ -34,9 +34,9 @@ Instructions
     + >>> \+ PHP Built In Web
     + Set host to localhost or 127.0.0.1
     + Set port to 8080
-    + Make sure root is the wordpress directory
+    + Make sure root is the wordpress directory file path
     + Click "Fix"
-    + Make sure configuration is set to the correct version of PHP installed
+    + Make sure PHP language level and CLI interpreter match and are set to installed PHP version
     + Click apply
     + Execute the configuration
 6. Open browser and go to localhost:8080
@@ -46,6 +46,7 @@ Instructions
 8. Fill out website sign-up form
     + If page does not load:
         + In php.ini file, change max execution to 90; "max_execution_time = 90"
+9. Login
 
 
 **How to collaborate using Git**
