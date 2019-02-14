@@ -1,9 +1,19 @@
 Instructions
 =
+**How to install PHP**
+-
+
+**How to install MySQL**
+-
+
 **How to install Wordpress**
 -
 1. Make sure wordpress directory is in PhpstormProjects folder
 2. Set up database in Phpstorm
+    + Set up SQL
+        + >Database
+        + >>\+ Data Source
+        + >>>MySQL
     + Use the following MySQL commands
         + CREATE DATABASE <db_name>
         + CREATE USER '<user_name>'@'localhost' IDENTIFIED BY '<password>';
