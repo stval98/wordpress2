@@ -1,10 +1,50 @@
 Instructions
 =
-**How to install PHP**
+**How to install PHP & Composer**
 -
-
++ Windows
+    1. Install Visual C++ Redistributable for Visual Studio 2015
+    2. Download PHP7
+    3. Expand zip file to file path C:\PHP7
+    4. In C:\PHP7 folder, rename php.ini-development to php.ini
+    5. Open php.ini file in text editor
+        * Change memory_limit from 128M to 1G
+        * Uncomment:
+            * ;extension_dir = "ext"
+            * ;extension=php_gd2
+            * ;extension=php_curl
+            * ;extension=php_mbstring
+            * ;extension=php_openssl
+            * ;extension=php_pdo_mysql
+            * ;extension=php_pdo_sqlite
+            * ;extension=php_sockets
+    6. Add C:\PHP7 to Windows system path:
+        * >System Control Panel
+        * >>Advanced System Settings
+        * >>>Environment Variables...
+        * >>>>Path row under 'System variables' and click 'Edit...'
+        * >>>>>'New' and add the row C:\PHP7
+        * Click OK 3 times and close out System Control Panel
+    7. Open terminal emulator and type in php -v to verify PHP is working
+    8. Download Composer
+    9. Allow installer to make changes to php.ini file
+    10. Close terminal window and open a new one
+    11. Run composer command 
++ MacOS
+    1. Install latest PHP with Homebrew
+    2. Remove the old PHP tap: $ brew untap homebrew/php
+    3. Cleanup old installs (not only PHP though) and dead symlinks: $ brew prune && brew cleanup
+    4. Update brew itself and all formulae: $ brew update
+    5. Let brew run internal checks to see whether everything is fine: $ brew doctor
+    6. This command now will install the latest PHP available (7.2.4_1): $ brew install php
+    7. Download Composer
+    8. Allow installer to make changes to php.ini file
+    9. Close terminal window and open a new one
+    10. Run composer command 
+    
 **How to install MySQL**
 -
+
 
 **How to install Wordpress**
 -
