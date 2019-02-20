@@ -44,6 +44,11 @@ Instructions
     
 **How to install MySQL**
 -
+1. Download MySQL 
+    MacOS : https://dev.mysql.com/downloads/file/?id=484914
+    Windows : https://dev.mysql.com/downloads/installer/
+2. Once downloaded begin installation process
+3. When asked about password preferences select 'Legacy' 
 
 
 **How to install Wordpress**
@@ -89,6 +94,58 @@ Instructions
 9. Login
 
 
-**How to collaborate using Git**
+**How to collaborate using Git & PHPStorm**
 -
-1.
+1. Create a repository on GitHub.com
+    + Click the '+' drop down menu in the upper right hand corner
+    + Select 'New Repository' from the drop down menu
+    + Name your repository
+    *Options*
+        + Toggle Public/Private
+        + Toggle README
+        + Toggle .gitignore using 'Node' or 'Composer'
+            //To ignore files simply add the file name to your .gitignore
+        + Toggle license
+2. Copy the HTTPS URL provided by GitHub that links to your repository
+3. Start up PHPStorm
+4. Select 'Check out from Version Control' from the start up menu
+5. Select 'git' from the drop down menu
+6. Paste the repository link into the 'URL' input form
+    + Test connection
+    + Adjust the root of the project being created 
+7. Select 'Clone' to download a version of your repository to your local machine
+
+
+**Commits & Pushing**
+
+1. After completing work on your local machine you can push your work back up to your repository
+    + When adding a new file locally PHPStorm will ask if you want to add this work to Git
+            Select Yes
+2. Select the 'VCS' tab in PHPStorm
+3. Select Commit
+    + Here you can adjust what pages are being committed
+    + Note: add any pages dealing with local configurations to the .gitignore file
+    + Add a useful 'Commit Message' to better track changes and keep your team up to date
+    + Uncheck 'Perform Code Analysis' and 'Check TODO'
+    + Click the 'Commit' button to commit your changes
+4. Select the 'VCS' tab in PHPStorm
+5. Hover over 'Git' to get additional features
+6. Select 'Push'
+    + Take note of which Branch you are pushing to
+    + This step could lead to you losing/breaking project so BE CAREFUL
+    
+    
+**Branches** 
+
+  1. Create a Branch
+    + In the lower right hand corner of PHPStorm there is a tab with "Git: master"
+            //Master being the current branch 
+    + Click the tab and select 'New Branch'
+    + Name your branch and select 'Okay'
+    + This creates another version of your project, meaning you can have a stable version, usually labeled Master, 
+        and make changes without worrying about breaking your working program
+  2. Merging Branches
+    + Select the 'Master' branch from the lower right hand corner
+    + Select the 'Git: master' tab again
+    + Hover over the branch that you want to merge into Master 
+    + Select 'Merge into Current'
