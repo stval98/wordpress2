@@ -7,78 +7,33 @@
 </head>
 <body>
 
-<div class = "navbar navbar-inverse navbar-static-top">
     <div class = "container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+            <a class="navbar-brand" href="http://localhost:8080/?">Wordpress Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a href = "#" class = "navbar-brand">Bootstrap WordPress Theme</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/?">Home <span class="sr-only">(current)</span></a>
+                    </li>
 
-        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-        </button>
-        <div class = "collapse navbar-collapse navHeaderCollapse">
-
-            <ul class = "nav navbar-nav navbar-right">
-
-                <li><a href = "#">Home</a></li>
-                <li class = "dropdown">
-
-                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Blog <b class = "caret"></b></a>
-                    <ul class = "dropdown-menu">
-                        <li><a href = "#">Item One</a></li>
-                        <li><a href = "#">Item Two</a></li>
-                        <li><a href = "#">Item Three</a></li>
-                        <li><a href = "#">Item Four</a></li>
-                    </ul>
-
-                </li>
-                <li class = "dropdown">
-
-                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
-                    <ul class = "dropdown-menu">
-                        <li><a href = "#">Twitter</a></li>
-                        <li><a href = "#">Facebook</a></li>
-                        <li><a href = "#">Google+</a></li>
-                        <li><a href = "#">Instagram</a></li>
-                    </ul>
-
-                </li>
-                <li><a href = "#">About</a></li>
-                <li><a href = "#contact" data-toggle="modal">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-    </div>
-</div>
-
-<div class = "container">
-
-    <div class = "jumbotron">
-        <h2>Post Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu erat, congue eget ornare et, luctus eget purus. Etiam et risus metus. Nam sed mi tellus. Mauris molestie massa eu metus tempor, in hendrerit arcu adipiscing.</p>
-    </div>
-
-    <div class = "panel panel-default panel-body">
-        <div class = "row">
-            <div class = "col-md-2">
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href = "#">Category One</a></li>
-                    <li><a href = "#">Category Two</a></li>
-                    <li><a href = "#">Category Three</a></li>
-                    <li><a href = "#">Category Four</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Links
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://github.com/stval98/wordpress2">Github</a>
+                            <a class="dropdown-item" href="#">YouTube</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class = "col-md-10">
-                <a href = "#"><h3>This random post is really awesome!</h3></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu erat, congue eget ornare et, luctus eget purus. Etiam et risus metus. Nam sed mi tellus. Mauris molestie massa eu metus tempor, in hendrerit arcu adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class = "text-muted">Posted by Ahsan on January 1st 2014</p>
-            </div>
-        </div>
+        </nav>
     </div>
 
-</div>
+<div class = "container">
 
 <?php wp_head(); ?>
