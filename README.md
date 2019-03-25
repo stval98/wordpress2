@@ -173,7 +173,7 @@ Instructions
 3. Change directory to MySQL Server bin file
     - For example: 
         * `cd C:\Program Files\MySQL\MySQL Server 8.0\bin`
-4. Run mysql program
+4. Run mysql program: `mysql.exe`
 5. Run mysql command
     * `mysql -u <username> -p <db_name> < <file_name>.sql`
 6. Enter password when prompted
