@@ -6165,11 +6165,29 @@ function wp_privacy_delete_old_export_files() {
 		}
 	}
 }
-
+/*
 // Changing excerpt more
 function new_excerpt_more($more) {
     global $post;
     return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+*/
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    if ( ! is_single() ) {
+        $more = sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+            get_permalink( get_the_ID() ),
+            __( '... Read More', 'textdomain' )
+        );
+    }
+
+    return $more;
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
