@@ -26,7 +26,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://github.com/stval98/wordpress2">Github</a>
-                            <a class="dropdown-item" href="#">YouTube</a>
+                            <a class="dropdown-item" href="https://youtu.be/gqjEVh5H6Go">YouTube</a>
                         </div>
                     </li>
                 </ul>
